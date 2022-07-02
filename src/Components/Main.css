@@ -1,0 +1,66 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+img {
+  height: 100px;
+  transition: 0.5s;
+}
+
+.inputBox {
+  border: 1px solid lightgray;
+  border-radius: 100px;
+  width: 500px;
+  height: 40px;
+  margin: 20px;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputBox:hover {
+  box-shadow: 0 0 3px gray;
+}
+
+.input {
+  outline: none;
+  border: none;
+  width: 80%;
+  height: 30px;
+  padding: 5px 0;
+}
+
+.icn {
+  padding: 10px;
+  color: gray;
+}
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  text-transform: inherit;
+}
+
+.buttonBox button {
+  margin: 5px;
+  text-transform: inherit;
+  color: black;
+  border: none;
+  background-color: rgb(241, 241, 241);
+}
+
+.buttonBox button:hover {
+  border: lightgray 1px solid;
+}
+
+@media (max-width: 500px) {
+  .inputBox {
+    width: 90vw;
+  }
+  img {
+    height: 70px;
+  }
+}

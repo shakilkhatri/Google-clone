@@ -1,0 +1,53 @@
+.HeaderResultsPage {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 1px 1px 5px lightgray;
+  position: sticky;
+  background: none;
+  z-index: 10;
+}
+
+.G-Icon-small {
+  height: 40px;
+  padding: 0 20px;
+}
+
+.ResultsPageBody {
+  padding-top: 100px;
+  margin: 20px 40px 40px 12vw;
+  max-width: 550px;
+  overflow: auto;
+}
+
+.displayLink {
+  display: block;
+  color: rgb(96, 96, 252);
+}
+
+.title,
+.displayTitle,
+.displayLink,
+.description {
+  margin: 0;
+  padding: 0;
+}
+
+.displayTitle {
+  display: block;
+  color: rgb(96, 96, 252);
+  font-size: 13px;
+  margin-top: 35px;
+}
+.resultGroup {
+  display: unset;
+  /* padding: 50px; */
+}
+
+.buttonBox2 {
+  display: none;
+}
+
+.hidden {
+  /* display: none; */
+}
