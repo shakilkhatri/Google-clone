@@ -26,21 +26,21 @@ const Main = ({ Term, setTerm, data, setData }) => {
       )
         .then((response) => response.json())
         .then((result) => {
-          console.log(result);
+          // console.log(result);
           res = result;
           setData(res);
-          console.log(res.items);
+          // console.log(res.items);
         })
         .catch((error) => console.error(error));
     };
-
-    // fetchData();
+    //API CALL:
+    fetchData();
 
     //LOCAL RESPONSE DATA:
-    setData(response);
-    console.log(data);
+    // setData(response);
 
-    // console.log("search");
+    // console.log(data);
+
     navigate("Results");
   };
 
