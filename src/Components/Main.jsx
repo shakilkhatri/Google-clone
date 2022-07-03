@@ -4,10 +4,8 @@ import SearchIcon from "@mui/icons-material/Search";
 import MicIcon from "@mui/icons-material/Mic";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import useGoogleSearch from "../useGoogleSearch";
 import response from "../response";
 import API_KEY from "../keys";
-import { Container } from "@mui/system";
 
 const CONTEXT_KEY = "6bf49df60729432e3";
 
