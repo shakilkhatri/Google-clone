@@ -24,18 +24,10 @@ const Results = ({ Term, setTerm, data, setData }) => {
         <section>
           {data?.items.map((item) => (
             <div className="resultGroup">
-              <a
-                href={item.displayLink}
-                className="displayTitle"
-                key={Math.random()}
-              >
+              <a href={item.link} className="displayTitle" key={Math.random()}>
                 <h2 className="title">{item.title}</h2>
               </a>
-              <a
-                href={item.displayLink}
-                className="displayLink"
-                key={Math.random()}
-              >
+              <a href={item.link} className="displayLink" key={Math.random()}>
                 {item.displayLink}
               </a>
               <p className="description">{item.snippet}</p>
