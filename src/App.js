@@ -9,9 +9,10 @@ function App() {
   const [data, setData] = useState();
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route
+          exact
           path="/"
           element={
             <Home Term={Term} setTerm={setTerm} data={data} setData={setData} />
