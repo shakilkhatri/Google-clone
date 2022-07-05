@@ -71,7 +71,9 @@ const Main = ({ Term, setTerm, data, setData }) => {
         <Button type="submit" variant="outlined" onClick={SearchButtonPress}>
           Google Search
         </Button>
-        <Button variant="outlined">I'm Feeling Lucky</Button>
+        <Button variant="outlined" onClick={() => alert("LoL")}>
+          I'm Feeling Lucky
+        </Button>
       </div>
     </form>
   );
