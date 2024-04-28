@@ -15,26 +15,32 @@ const Results = ({ Term, setTerm, data, setData }) => {
         <Header2 Term={Term} setTerm={setTerm} data={data} setData={setData} />
       </div>
 
-      <section className="ResultsPageBody">
-        <div>
-          About {data?.searchInformation.formattedTotalResults} results (
-          {data?.searchInformation.formattedSearchTime + " "}
-          seconds)
-        </div>
-        <section>
-          {data?.items.map((item) => (
-            <div className="resultGroup">
-              <a href={item.link} className="displayTitle" key={Math.random()}>
-                <h2 className="title">{item.title}</h2>
-              </a>
-              <a href={item.link} className="displayLink" key={Math.random()}>
-                {item.displayLink}
-              </a>
-              <p className="description">{item.snippet}</p>
-            </div>
-          ))}
+      {data && (
+        <section className="ResultsPageBody">
+          <div>
+            About {data?.searchInformation.formattedTotalResults} results (
+            {data?.searchInformation.formattedSearchTime + " "}
+            seconds)
+          </div>
+          <section>
+            {data?.items.map((item) => (
+              <div className="resultGroup">
+                <a
+                  href={item.link}
+                  className="displayTitle"
+                  key={Math.random()}
+                >
+                  <h2 className="title">{item.title}</h2>
+                </a>
+                <a href={item.link} className="displayLink" key={Math.random()}>
+                  {item.displayLink}
+                </a>
+                <p className="description">{item.snippet}</p>
+              </div>
+            ))}
+          </section>
         </section>
-      </section>
+      )}
     </>
   );
 };

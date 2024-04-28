@@ -1,18 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Header2.css";
 import SearchIcon from "@mui/icons-material/Search";
 import MicIcon from "@mui/icons-material/Mic";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
-import response from "../response";
-import API_KEY from "../keys";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const CONTEXT_KEY = "6bf49df60729432e3";
 
 const Header2 = ({ Term, setTerm, data, setData }) => {
   const navigate = useNavigate();
   let res;
-  let done = false;
 
   useEffect(() => {
     // console.log(data, setData);
